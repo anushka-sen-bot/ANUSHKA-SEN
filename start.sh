@@ -1,5 +1,5 @@
 echo "Cloning main Repository"
-git clone https://github.com/NobiDeveloper/Nobita-Filter-Bot.git /ANUSHKA
+git clone https://github.com/anushka-sen-bot/ANUSHKA-SEN.git /ANUSHKA
 echo "DONE ✅ \n now TRYING to dEpLoY"
 cd /ANUSHKA
 echo "installing some apps for this bot "
