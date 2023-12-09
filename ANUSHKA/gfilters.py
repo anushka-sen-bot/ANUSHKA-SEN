@@ -1,14 +1,14 @@
 import io
 from pyrogram import filters, Client, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from database.gfilters_mdb import(
+from database.ANUSHKADB.gfilters_mdb import(
    add_gfilter,
    get_gfilters,
    delete_gfilter,
    count_gfilters
 )
 
-from database.connections_mdb import active_connection
+from database.ANUSHKADB.connections_mdb import active_connection
 from utils import get_file_id, gfilterparser, split_quotes
 from info import ADMINS
 
