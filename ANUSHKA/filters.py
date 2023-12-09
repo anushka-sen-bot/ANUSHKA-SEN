@@ -9,7 +9,7 @@ from database.ANUSHKADB.filters_mdb import(
 )
 
 from database.ANUSHKADB.connections_mdb import active_connection
-from utils import get_file_id, parser, split_quotes
+from ANUSHKA.utils import get_file_id, parser, split_quotes
 from info import ADMINS
 
 
