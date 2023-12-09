@@ -1,7 +1,7 @@
 from logging import getLogger
 from pyrogram import Client, filters, enums
 from pyrogram.types import ChatJoinRequest
-from database.join_reqs import JoinReqs
+from database.ANUSHKADB.join_reqs import JoinReqs
 from info import ADMINS, REQ_CHANNEL
 
 
