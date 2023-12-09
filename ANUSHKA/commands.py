@@ -11,8 +11,8 @@ from database.users_chats_db import db
 from info import *
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, send_all
 from database.connections_mdb import active_connection
-from plugins.fsub import ForceSub
-from plugins.pm_filter import ENABLE_SHORTLINK
+from ANUSHKA.fsub import ForceSub
+from ANUSHKA.pm_filter import ENABLE_SHORTLINK
 import re
 import json
 import base64
