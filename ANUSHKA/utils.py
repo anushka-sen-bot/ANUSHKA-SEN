@@ -1,7 +1,7 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
 from info import *
-from database.join_reqs import JoinReqs as db2
+from database.ANUSHKADB.join_reqs import JoinReqs as db2
 from imdb import Cinemagoer 
 import asyncio
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
@@ -15,7 +15,7 @@ import os
 from datetime import datetime, timedelta, date, time
 import string
 from typing import List
-from database.users_chats_db import db
+from database.ANUSHKADB.users_chats_db import dbanushka as db
 from bs4 import BeautifulSoup
 import requests
 import aiohttp
