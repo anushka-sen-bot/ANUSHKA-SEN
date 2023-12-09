@@ -112,7 +112,7 @@ class ANUSHKABot(Client):
 
     def __init__(self):
         super().__init__(
-            name=SESSION,
+            name="ANUSHKA_BOT",
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=ANUSHKA_BOT_TOKEN,
