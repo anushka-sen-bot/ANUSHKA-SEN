@@ -3,7 +3,7 @@ import datetime
 import time
 from database.ANUSHKADB.users_chats_db import dbanushka as db
 from info import ADMINS
-from utils import broadcast_messages
+from ANUSHKA.utils import broadcast_messages
 import asyncio
         
 @Client.on_message(filters.command("broadcast") & filters.user(ADMINS) & filters.reply)
