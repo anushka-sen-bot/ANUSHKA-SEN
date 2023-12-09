@@ -7,7 +7,7 @@ from info import ADMINS
 from info import INDEX_REQ_CHANNEL as LOG_CHANNEL
 from database.ANUSHKADB.ia_filterdb import save_file
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from utils import temp
+from ANUSHKA.utils import temp
 import re
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
