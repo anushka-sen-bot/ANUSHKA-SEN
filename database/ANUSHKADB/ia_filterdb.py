@@ -16,7 +16,7 @@ logger.setLevel(logging.INFO)
 
 client = AsyncIOMotorClient(DATABASE_URI)
 dbanushka = client[DATABASE_NAME]
-instance = Instance.from_dbanushka(dbanushka)
+instance = Instance.from_db(dbanushka)
 
 @instance.register
 class Media(Document):
