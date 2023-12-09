@@ -6,11 +6,11 @@ from Script import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from database.ia_filterdb import Media, get_file_details, unpack_new_file_id, get_bad_files
-from database.users_chats_db import db
+from database.ANUSHKADB.ia_filterdb import Media, get_file_details, unpack_new_file_id, get_bad_files
+from database.ANUSHKADB.users_chats_db import dbanushka as db
 from info import *
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, send_all
-from database.connections_mdb import active_connection
+from database.ANUSHKADB.connections_mdb import active_connection
 from ANUSHKA.fsub import ForceSub
 from ANUSHKA.pm_filter import ENABLE_SHORTLINK
 import re
