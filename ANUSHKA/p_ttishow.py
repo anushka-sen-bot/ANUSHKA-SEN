@@ -4,7 +4,7 @@ from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInv
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID, CHNL_LNK, GRP_LNK, RUL_LNK
 from database.ANUSHKADB.users_chats_db import dbanushka as db
 from database.ANUSHKADB.ia_filterdb import Media
-from utils import get_size, temp, get_settings
+from ANUSHKA.utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
