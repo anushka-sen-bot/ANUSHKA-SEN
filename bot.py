@@ -13,7 +13,7 @@ from database.ia_filterdb import Media
 from database.users_chats_db import db
 from database.ANUSHKADB.ia_filterdb import Media as ANUSHKAMedia
 from database.ANUSHKADB.users_chats_db import dbanushka
-from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL, PORT
+from info import ANUSHKA_BOT_TOKEN, SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL, PORT
 from utils import temp
 from ANUSHKA.utils import temp as anushkatemp
 from typing import Union, Optional, AsyncGenerator
