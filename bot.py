@@ -54,10 +54,14 @@ class Bot(Client):
         await Media.ensure_indexes()
         me = await self.get_me()
         temp.ME = me.id
+        anushkatemp.Me = anushka.id
         temp.U_NAME = me.username
+        anushkatemp.U_NAME = anushka.username
         temp.B_NAME = me.first_name
+        anushkatemp.B_NAME = anushka.first_name
         self.username = '@' + me.username
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
+        logging.info(f"{anushka.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {anushka.username}.")
         logging.info(LOG_STR)
         logging.info(script.LOGO)
         tz = pytz.timezone('Asia/Kolkata')
