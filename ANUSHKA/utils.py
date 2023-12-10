@@ -36,22 +36,16 @@ SMART_OPEN = '“'
 SMART_CLOSE = '”'
 START_CHAR = ('\'', '"', SMART_OPEN)
 
-ai = Client(
-                    ANUSHKA_BOT_TOKEN, API_ID, API_HASH,
-                    bot_token=ANUSHKA_BOT_TOKEN,
-                    plugins={"root": "ANUSHKA"},
-)
-anushka = await ai.get_me()
 # temp db for banned 
 class temp(object):
     BANNED_USERS = []
     BANNED_CHATS = []
-    ME = anushka.id
+    ME = None
     CURRENT=int(os.environ.get("SKIP", 2))
     CANCEL = False
     MELCOW = {}
-    U_NAME = anushka.username
-    B_NAME = anushka.first_name
+    U_NAME = None
+    B_NAME = None
     SETTINGS = {}
     VERIFY = {}
     SEND_ALL_TEMP = {}
