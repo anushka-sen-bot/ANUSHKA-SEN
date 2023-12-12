@@ -59,6 +59,8 @@ class Bot(Client):
         anushkatemp.U_NAME = anushka.username
         temp.B_NAME = me.first_name
         anushkatemp.B_NAME = anushka.first_name
+        temp.B_MEN = me.mention
+        anushkatemp.B_MEN = anushka.mention
         self.username = '@' + me.username
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(f"{anushka.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {anushka.username}.")
