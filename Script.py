@@ -1,11 +1,13 @@
 class script(object):
     START_TXT = """
-<b>{},
+<b>{}, baby
+
+my name is {},
 
 ɪ  ᴄᴀɴ  ᴘʀᴏᴠɪᴅᴇ  ᴍᴏᴠɪᴇs  ᴀɴᴅ  sᴇʀɪᴇs,
 ᴊᴜsᴛ  ᴀᴅᴅ  ᴍᴇ  ᴛᴏ  ʏᴏᴜʀ  ɢʀᴏᴜᴘ  ᴀɴᴅ  ᴇɴᴊᴏʏ  😍
 
-💞 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.dog/ANUSHKA_SEN_bot'>ANUSHKA SEN♥️</a></b>
+💞 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.dog/addlist/a6R50VZLc54yYTA8'>ANUSHKA SEN♥️</a></b>
 """
     HELP_TXT = """
 <b>{},
