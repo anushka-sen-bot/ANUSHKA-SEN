@@ -1428,10 +1428,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('🙏ᴄʜᴀɴɴᴇʟ🙏', url='https://telegram.dog/ANUSHKA_SEN_CHANNEL')
         ],[
-            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ  ʙᴜɢꜱ  ᴀɴᴅ  ꜰᴇᴇᴅʙᴀᴄᴋ', url='https://telegram.me/ANUSHKA_SEN_CHANNEL')
+            InlineKeyboardButton('❤️‍🔥 LIST ❤️‍🔥', url='https://telegram.dog/addlist/a6R50VZLc54yYTA8')
         ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ɴᴇxᴛ', url='https://telegram.me/AllRequestGroups')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
+          #  InlineKeyboardButton('ɴᴇxᴛ', url='https://telegram.me/AllRequestGroups')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1440,7 +1440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+            text=script.ABOUT_TXT.format(temp.B_MEN),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
