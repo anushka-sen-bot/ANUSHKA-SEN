@@ -19,6 +19,8 @@ SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID'))
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
+
+#FOR 2ND BOT ENV👇👇
 ANUSHKA_BOT_TOKEN = environ.get('ANUSHKA_BOT_TOKEN') # for your 2nd bot
 
 # Bot settings
@@ -29,6 +31,16 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/61ef9818986cef9554017.jpg h
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
+
+#2nd BOT SETTINGS 👇👇
+ANUSHKA_CACHE_TIME = int(environ.get('ANUSHKA_CACHE_TIME', 300))
+ANUSHKA_USE_CAPTION_FILTER = bool(environ.get('ANUSHKA_USE_CAPTION_FILTER', True))
+
+ANUSHKA_PICS = (environ.get('ANUSHKA_PICS', 'https://telegra.ph/file/61ef9818986cef9554017.jpg https://telegra.ph/file/4696ff67a5bae3ea92c14.jpg')).split()
+ANUSHKA_NOR_IMG = environ.get("ANUSHKA_NOR_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
+ANUSHKA_MELCOW_VID = environ.get("ANUSHKA_MELCOW_VID", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
+ANUSHKA_SPELL_IMG = environ.get("ANUSHKA_SPELL_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
+
 
 # Admins, Channels & User
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -41,6 +53,18 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID')
 reqst_channel = environ.get('REQST_CHANNEL_ID')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
+
+#FOR 2ND BOT ADMIN & ALL 👇👇
+ANUSHKA_ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ANUSHKA_ADMINS', '').split()]
+ANUSHKA_CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('ANUSHKA_CHANNELS', '').split()]
+anushka_auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('ANUSHKA_AUTH_USERS', '').split()]
+ANUSHKA_AUTH_USERS = (anushka_auth_users + ADMINS) if auth_users else []
+anushka_auth_grp = environ.get('ANUSHKA_AUTH_GROUP')
+ANUSHKA_AUTH_GROUPS = [int(ch) for ch in anushka_auth_grp.split()] if anushka_auth_grp else None
+anushka_support_chat_id = environ.get('ANUSHKA_SUPPORT_CHAT_ID')
+anushka_reqst_channel = environ.get('ANUSHKA_REQST_CHANNEL_ID')
+ANUSHKA_REQST_CHANNEL = int(anushka_reqst_channel) if anushka_reqst_channel and id_pattern.search(anushka_reqst_channel) else None
+ANUSHKA_SUPPORT_CHAT_ID = int(anushka_support_chat_id) if anushka_support_chat_id and id_pattern.search(anushka_support_chat_id) else None
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
@@ -62,8 +86,16 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Nobideveloper")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+# 2nd Bot DB
+ANUSHKA_DATABASE_URI = environ.get('ANUSHKA_DATABASE_URI', DATABASE_URI)
+ANUSHKA_DATABASE_NAME = environ.get('ANUSHKA_DATABASE_NAME', "ANUSHKA")
+ANUSHKA_COLLECTION_NAME = environ.get('ANUSHKA_COLLECTION_NAME', 'Telegram_files')
+
 # stickers
 STICKERS = (environ.get('STICKERS', 'CAACAgUAAxkBAAIKqWP81BZ6YnpWEFoF_4JPR0EbjsO3AAIvBwACnMjpV9YvaONl41IBHgQ CAACAgUAAxkBAAIKrmP81GnWQ0d_BAZhre0dMc5SwJKOAAJ0DgACgr3gVwrjYuxSJxn7HgQ')).split()
+
+#2nd Sticker
+ANUSHKA_STICKERS = (environ.get('STICKERS', 'CAACAgUAAxkBAAIKqWP81BZ6YnpWEFoF_4JPR0EbjsO3AAIvBwACnMjpV9YvaONl41IBHgQ CAACAgUAAxkBAAIKrmP81GnWQ0d_BAZhre0dMc5SwJKOAAJ0DgACgr3gVwrjYuxSJxn7HgQ')).split()
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
