@@ -68,19 +68,18 @@ ANUSHKA_SUPPORT_CHAT_ID = int(anushka_support_chat_id) if anushka_support_chat_i
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
+ANUSHKA_DOWNLOAD_LOCATION = environ.get("ANUSHKA_DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 # This is required for the plugins involving the file system.
 TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
-
+ANUSHKA_TMP_DOWNLOAD_DIRECTORY = environ.get("ANUSHKA_TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 # Open AI
 OPENAI_API = environ.get('OPENAI_API', '0')
-if len(OPENAI_API) == 0:
-    logging.warning('OPENAI_API is empty')
-    exit()
+ANUSHKA_OPENAI_API = environ.get('ANUSHKA_OPENAI_API', '0')
 
 # Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
-
+ANUSHKA_COMMAND_HAND_LER = environ.get("ANUSHKA_COMMAND_HAND_LER", "/")
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Nobideveloper")
@@ -105,10 +104,21 @@ REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
+ANUSHKA_auth_channel = environ.get('ANUSHKA_AUTH_CHANNEL')
+ANUSHKA_AUTH_CHANNEL = int(anushka_auth_channel) if anushka_auth_channel and id_pattern.search(anushka_auth_channel) else None
+# Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
+ANUSHKA_REQ_CHANNEL = environ.get("ANUSHKA_REQ_CHANNEL", "")
+ANUSHKA_REQ_CHANNEL = int(ANUSHKA_REQ_CHANNEL) if ANUSHKA_REQ_CHANNEL and id_pattern.search(ANUSHKA_REQ_CHANNEL) else False
+ANUSHKA_JOIN_REQS_DB = environ.get("ANUSHKA_JOIN_REQS_DB", DATABASE_URI)
+
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.</b>")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
+
+ANUSHKA_CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
+ANUSHKA_TEXT = environ.get("ANUSHKA_APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.</b>")
+ANUSHKA_APPROVED = environ.get("ANUSHKA_APPROVED_WELCOME", "on").lower()
 
 # Others
 IS_VERIFY = bool(environ.get('IS_VERIFY', False))
@@ -152,6 +162,48 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 LANGUAGES = ["hindi", "hin", "tamil", "tam", "telugu", "tel", "english", "eng", "kannada", "kan", "malayalam", "mal"]
 TUTORIAL = environ.get('TUTORIAL', 'https://youtu.be/rddlpYLm0G0')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
+
+ANUSHKA_IS_VERIFY = bool(environ.get('ANUSHKA_IS_VERIFY', False))
+ANUSHKA_VERIFY2_URL = environ.get('ANUSHKA_VERIFY2_URL', "tnshort.net")
+ANUSHKA_VERIFY2_API = environ.get('ANUSHKA_VERIFY2_API', "0c8ebd63bfe9f67f9970b8767498ff60316b9b03")
+ANUSHKA_SHORTLINK_URL = environ.get('ANUSHKA_SHORTLINK_URL', 'Onepagelink.in')
+ANUSHKA_SHORTLINK_API = environ.get('ANUSHKA_SHORTLINK_API', '8c09653e5c38f84d1b76ad3197c5a023e53b494d')
+ANUSHKA_IS_SHORTLINK = bool(environ.get('ANUSHKA_IS_SHORTLINK', True))
+ANUSHKA_NO_RESULTS_MSG = bool(environ.get('ANUSHKA_NO_RESULTS_MSG', True))
+ANUSHKA_DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('ANUSHKA_DELETE_CHANNELS', '0').split()]
+ANUSHKA_MAX_B_TN = environ.get("ANUSHKA_MAX_B_TN", "8")
+ANUSHKA_MAX_BTN = is_enabled((environ.get('ANUSHKA_MAX_BTN', "True")), True)
+ANUSHKA_PORT = environ.get("ANUSHKA_PORT", "8080")
+ANUSHKA_S_GROUP = environ.get('ANUSHKA_S_GROUP',"https://telegram.me/BotszSupport")
+ANUSHKA_RUL_LNK = environ.get('ANUSHKA_RUL_LNK',"https://graph.org/%F0%9D%97%A0%F0%9D%9E%93%F0%9D%97%A6%F0%9D%97%A7%F0%9D%9E%9D%F0%9D%97%A5-02-15")
+ANUSHKA_MAIN_CHANNEL = environ.get('ANUSHKA_MAIN_CHANNEL',"https://telegram.me/NobiDeveloper")
+ANUSHKA_GRP_LNK = environ.get('ANUSHKA_GRP_LNK', 'https://telegram.me/BotszSupport')
+ANUSHKA_CHNL_LNK = environ.get('ANUSHKA_CHNL_LNK', 'https://telegram.me/BotszList')
+ANUSHKA_OWN_LNK = environ.get('ANUSHKA_S_GROUP',"https://telegram.me/NobiDeveloperr")
+ANUSHKA_MVG_LNK = environ.get('ANUSHKA_S_GROUP',"https://telegram.me/AllRequestGroups")
+ANUSHKA_MSG_ALRT = environ.get('ANUSHKA_MSG_ALRT', 'ꜱʜᴀʀᴇ  ᴀɴᴅ  ꜱᴜᴘᴘᴏʀᴛ  ᴜꜱ')
+ANUSHKA_LOG_CHANNEL = int(environ.get('ANUSHKA_LOG_CHANNEL', ''))
+ANUSHKA_SUPPORT_CHAT = environ.get('ANUSHKA_SUPPORT_CHAT', 'BotszSupport')
+ANUSHKA_P_TTI_SHOW_OFF = is_enabled((environ.get('ANUSHKA_P_TTI_SHOW_OFF', "True")), True)
+ANUSHKA_IMDB = is_enabled((environ.get('ANUSHKA_IMDB', "False")), False)
+ANUSHKA_AUTO_FFILTER = is_enabled((environ.get('ANUSHKA_AUTO_FFILTER', "True")), True)
+ANUSHKA_AUTO_DELETE = is_enabled((environ.get('ANUSHKA_AUTO_DELETE', "True")), True)
+ANUSHKA_SINGLE_BUTTON = is_enabled((environ.get('ANUSHKA_SINGLE_BUTTON', "True")), True)
+ANUSHKA_CUSTOM_FILE_CAPTION = environ.get("ANUSHKA_CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
+ANUSHKA_BATCH_FILE_CAPTION = environ.get("ANUSHKA_BATCH_FILE_CAPTION", None)
+ANUSHKA_IMDB_TEMPLATE = environ.get("ANUSHKA_IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
+ANUSHKA_LONG_IMDB_DESCRIPTION = is_enabled(environ.get("ANUSHKA_LONG_IMDB_DESCRIPTION", "False"), False)
+ANUSHKA_SPELL_CHECK_REPLY = is_enabled(environ.get("ANUSHKA_SPELL_CHECK_REPLY", "True"), True)
+ANUSHKA_MAX_LIST_ELM = environ.get("ANUSHKA_MAX_LIST_ELM", None)
+ANUSHKA_INDEX_REQ_CHANNEL = int(environ.get('ANUSHKA_INDEX_REQ_CHANNEL', LOG_CHANNEL))
+ANUSHKA_FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('ANUSHKA_FILE_STORE_CHANNEL', '')).split()]
+ANUSHKA_MELCOW_NEW_USERS = is_enabled((environ.get('ANUSHKA_MELCOW_NEW_USERS', "True")), True)
+ANUSHKA_PROTECT_CONTENT = is_enabled((environ.get('ANUSHKA_PROTECT_CONTENT', "False")), False)
+ANUSHKA_PUBLIC_FILE_STORE = is_enabled((environ.get('ANUSHKA_PUBLIC_FILE_STORE', "True")), True)
+
+ANUSHKA_LANGUAGES = ["hindi", "hin", "tamil", "tam", "telugu", "tel", "english", "eng", "kannada", "kan", "malayalam", "mal"]
+ANUSHKA_TUTORIAL = environ.get('ANUSHKA_TUTORIAL', 'https://youtu.be/rddlpYLm0G0')
+ANUSHKA_IS_TUTORIAL = bool(environ.get('ANUSHKA_IS_TUTORIAL', True))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
