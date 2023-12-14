@@ -1158,13 +1158,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "group_info":
         buttons = [[
-#            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ', url="https://telegram.dog/addlist/a6R50VZLc54yYTA8"),
-#        ],[
-  #          InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://telegram.me/renish_rgi"),
-    #        InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
- #       ],[
             InlineKeyboardButton('♥️❤️‍🔥ꜱᴜᴘᴘᴏʀᴛ❤️‍🔥♥️', url="https://telegram.dog/addlist/a6R50VZLc54yYTA8")
-#            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://telegram.me/ReviewsGallary")
         ],[
             InlineKeyboardButton('ʙᴀᴄᴋ​', callback_data='start')
         ]]
@@ -1333,7 +1327,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
          ], [
             InlineKeyboardButton('📚 ᴇxᴛʀᴀ', callback_data='extra')
          ], [
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('😎 ADMIN', callback_data='admin')
          ], [
             InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file')
          ], [
@@ -1674,7 +1668,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "admin":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='owner_info')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         if query.from_user.id in ADMINS:
