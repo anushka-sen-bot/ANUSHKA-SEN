@@ -1264,7 +1264,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
          ], [
             InlineKeyboardButton('📚 ᴇxᴛʀᴀ', callback_data='extra')
          ], [
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('😎 ADMIN', callback_data='admin')
          ], [
             InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file')
          ], [
@@ -1605,7 +1605,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "admin":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='owner_info')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         if query.from_user.id in ADMINS:
