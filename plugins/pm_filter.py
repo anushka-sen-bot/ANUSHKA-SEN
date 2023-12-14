@@ -1158,13 +1158,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "group_info":
         buttons = [[
-#            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ', url="https://telegram.dog/addlist/a6R50VZLc54yYTA8"),
-#        ],[
-  #          InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://telegram.me/renish_rgi"),
-    #        InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
- #       ],[
             InlineKeyboardButton('♥️❤️‍🔥ꜱᴜᴘᴘᴏʀᴛ❤️‍🔥♥️', url="https://telegram.dog/addlist/a6R50VZLc54yYTA8")
-#            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://telegram.me/ReviewsGallary")
         ],[
             InlineKeyboardButton('ʙᴀᴄᴋ​', callback_data='start')
         ]]
@@ -1197,21 +1191,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif query.data == "purgee":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.WRITE,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
     elif query.data == "support_group":
         buttons = [[
            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://telegram.dog/ANUSHKA_SEN_CHANNEL'),
@@ -1230,37 +1209,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "share_txt":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.SHARE_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "restric":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.RESTRIC_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
     elif query.data == "pin":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
@@ -1276,21 +1224,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "github":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.GITHUB,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
     elif query.data == "openai":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
@@ -1303,62 +1236,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.message.edit_text(
             text=script.OPENAI,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "zombies":
-        buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.ZOMBIES_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )    
-    elif query.data == "help2":
-        buttons = [[
-            InlineKeyboardButton('📌 ᴘɪɴ​', callback_data='pin'),
-            InlineKeyboardButton('🚫 ʙᴀɴ', callback_data='zombies'),
-            InlineKeyboardButton('🔇 ᴍᴜᴛᴇ', callback_data='restric')
-         ], [
-            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file'),
-            InlineKeyboardButton('🧑‍🎓 ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
-            InlineKeyboardButton('🎲 ɢᴀᴍᴇs', callback_data='fun')
-         ], [
-            InlineKeyboardButton('🔖 ʀᴇᴘᴏʀᴛ', callback_data='filters'),
-            InlineKeyboardButton('🖌️ ᴡʀɪᴛᴇ', callback_data='purgee'),
-            InlineKeyboardButton('♻️ sʜᴀʀᴇ-ᴛᴇxᴛ', callback_data='share_txt')
-         ], [
-            InlineKeyboardButton('🌁 ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb'),
-            InlineKeyboardButton('📽️ ʏᴛ-ᴠɪᴅ', callback_data='video'),
-            InlineKeyboardButton('🎗️ ʏᴛ-ᴛᴀɢꜱ', callback_data='yttags')
-         ], [
-            InlineKeyboardButton('🎼 ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
-            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data='nobi'),
-            InlineKeyboardButton('⚜️ ɢᴇɴ-ᴘᴀss', callback_data='gen_pass')
-         ], [
-            InlineKeyboardButton('🤖 ɢɪᴛʜᴜʙ', callback_data='github'),
-            InlineKeyboardButton('2/2', callback_data='nobideveloper'),
-            InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
-         ], [
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='help')
-         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(                     
-            text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1379,32 +1256,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('✏️ ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter'),
-            InlineKeyboardButton('🔄 ᴀᴜᴛᴏ', callback_data='autofilter'),
+            InlineKeyboardButton('✏️ ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter')
+         ], [
+            InlineKeyboardButton('🔄 ᴀᴜᴛᴏ', callback_data='autofilter')
+         ], [
             InlineKeyboardButton('🖇️ ᴄᴏɴɴᴇᴄᴛ', callback_data='coct')
          ], [
             InlineKeyboardButton('📚 ᴇxᴛʀᴀ', callback_data='extra'),
-            InlineKeyboardButton('🎶 sᴏɴɢ', callback_data='song'),
-            InlineKeyboardButton('📯 ᴛᴛs', callback_data='tts')
          ], [
-            InlineKeyboardButton('🗑️ ᴘᴜʀɢᴇ', callback_data='corona'),
-            InlineKeyboardButton('📸 ᴛ-ɢʀᴀᴘʜ​', callback_data='tele'),
-            InlineKeyboardButton('🆎 ꜰᴏɴᴛ', callback_data='font')
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start')
          ], [
-            InlineKeyboardButton('📡 ᴘɪɴɢ', callback_data='pings'),
-            InlineKeyboardButton('🚫 ᴊsᴏɴᴇ', callback_data='json'),
-            InlineKeyboardButton('🎭 sᴛɪᴄᴋ-ɪᴅ', callback_data='sticker')
+            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file')
          ], [
-            InlineKeyboardButton('❓ ᴡʜᴏɪs', callback_data='whois'),
-            InlineKeyboardButton('♻️ ᴜʀʟ-sʜᴏʀᴛ', callback_data='urlshort'),
-            InlineKeyboardButton('📝 ɢ-ᴛʀᴀɴs', callback_data='gtrans')
+            InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
          ], [
-            InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
-            InlineKeyboardButton('1/2', callback_data='nobideveloper'),
-            InlineKeyboardButton('💎 ᴄᴀʀʙᴏɴ', callback_data='carb')
-         ], [
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='help2')
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
