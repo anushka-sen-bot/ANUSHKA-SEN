@@ -104,7 +104,7 @@ REQ_CHANNEL = environ.get("REQ_CHANNEL", "")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
-ANUSHKA_auth_channel = environ.get('ANUSHKA_AUTH_CHANNEL')
+anushka_auth_channel = environ.get('ANUSHKA_AUTH_CHANNEL')
 ANUSHKA_AUTH_CHANNEL = int(anushka_auth_channel) if anushka_auth_channel and id_pattern.search(anushka_auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
 ANUSHKA_REQ_CHANNEL = environ.get("ANUSHKA_REQ_CHANNEL", "")
