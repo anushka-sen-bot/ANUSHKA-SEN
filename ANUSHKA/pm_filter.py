@@ -1379,32 +1379,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('✏️ ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter'),
-            InlineKeyboardButton('🔄 ᴀᴜᴛᴏ', callback_data='autofilter'),
+            Inbuttons = [[
+            InlineKeyboardButton('✏️ ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter')
+         ], [
+            InlineKeyboardButton('🔄 ᴀᴜᴛᴏ', callback_data='autofilter')
+         ], [
             InlineKeyboardButton('🖇️ ᴄᴏɴɴᴇᴄᴛ', callback_data='coct')
          ], [
-            InlineKeyboardButton('📚 ᴇxᴛʀᴀ', callback_data='extra'),
-            InlineKeyboardButton('🎶 sᴏɴɢ', callback_data='song'),
-            InlineKeyboardButton('📯 ᴛᴛs', callback_data='tts')
+            InlineKeyboardButton('📚 ᴇxᴛʀᴀ', callback_data='extra')
          ], [
-            InlineKeyboardButton('🗑️ ᴘᴜʀɢᴇ', callback_data='corona'),
-            InlineKeyboardButton('📸 ᴛ-ɢʀᴀᴘʜ​', callback_data='tele'),
-            InlineKeyboardButton('🆎 ꜰᴏɴᴛ', callback_data='font')
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start')
          ], [
-            InlineKeyboardButton('📡 ᴘɪɴɢ', callback_data='pings'),
-            InlineKeyboardButton('🚫 ᴊsᴏɴᴇ', callback_data='json'),
-            InlineKeyboardButton('🎭 sᴛɪᴄᴋ-ɪᴅ', callback_data='sticker')
+            InlineKeyboardButton('📂 ꜰ-ꜱᴛᴏʀᴇ', callback_data='store_file')
          ], [
-            InlineKeyboardButton('❓ ᴡʜᴏɪs', callback_data='whois'),
-            InlineKeyboardButton('♻️ ᴜʀʟ-sʜᴏʀᴛ', callback_data='urlshort'),
-            InlineKeyboardButton('📝 ɢ-ᴛʀᴀɴs', callback_data='gtrans')
+            InlineKeyboardButton('🔎 ᴏᴘᴇɴᴀɪ', callback_data='openai')
          ], [
-            InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
-            InlineKeyboardButton('1/2', callback_data='nobideveloper'),
-            InlineKeyboardButton('💎 ᴄᴀʀʙᴏɴ', callback_data='carb')
-         ], [
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ɴᴇxᴛ ⋟', callback_data='help2')
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='start')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
