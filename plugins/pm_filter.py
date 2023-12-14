@@ -1158,13 +1158,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "group_info":
         buttons = [[
-            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ  ᴍʏ  ʏᴛ  ᴄʜᴀɴɴᴇʟ', url="https://youtube.com/@MovieVillaYT"),
-        ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://telegram.me/AllRequestGroups"),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
-        ],[
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url="https://telegram.me/ANUSHKA_SEN_CHANNEL"),
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://telegram.me/ReviewsGallary")
+#            InlineKeyboardButton('ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ', url="https://telegram.dog/addlist/a6R50VZLc54yYTA8"),
+#        ],[
+  #          InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://telegram.me/renish_rgi"),
+    #        InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
+ #       ],[
+            InlineKeyboardButton('♥️❤️‍🔥ꜱᴜᴘᴘᴏʀᴛ❤️‍🔥♥️', url="https://telegram.dog/addlist/a6R50VZLc54yYTA8")
+#            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://telegram.me/ReviewsGallary")
         ],[
             InlineKeyboardButton('ʙᴀᴄᴋ​', callback_data='start')
         ]]
