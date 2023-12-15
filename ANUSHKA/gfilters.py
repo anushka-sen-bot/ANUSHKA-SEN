@@ -10,7 +10,7 @@ from database.ANUSHKADB.gfilters_mdb import(
 
 from database.ANUSHKADB.connections_mdb import active_connection
 from ANUSHKA.utils import get_file_id, gfilterparser, split_quotes
-from info import ADMINS
+from ANUSHKA.info import ADMINS
 
 
 @Client.on_message(filters.command(['gfilter', 'addg']) & filters.incoming & filters.user(ADMINS))
