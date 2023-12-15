@@ -1,7 +1,7 @@
 from pyrogram import filters, Client, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ANUSHKADB.connections_mdb import add_connection, all_connections, if_active, delete_connection
-from info import ADMINS
+from ANUSHKA.info import ADMINS
 import logging
 
 logger = logging.getLogger(__name__)
