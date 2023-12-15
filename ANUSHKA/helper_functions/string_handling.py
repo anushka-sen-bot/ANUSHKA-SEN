@@ -2,7 +2,7 @@ import re
 import time
 from typing import List
 from pyrogram.types import Message, InlineKeyboardButton
-from info import COMMAND_HAND_LER
+from ANUSHKA.info import COMMAND_HAND_LER
 
 
 # NOTE: the url \ escape may cause double escapes
