@@ -27,19 +27,19 @@ ANUSHKA_BOT_TOKEN = environ.get('ANUSHKA_BOT_TOKEN') # for your 2nd bot
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/61ef9818986cef9554017.jpg https://telegra.ph/file/4696ff67a5bae3ea92c14.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/0d6ebe52d573e683ad3cd.jpg https://graph.org/file/d7f16e8380808e76e6572.jpg https://graph.org/file/4f1718c6836798e340e06.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/d7f16e8380808e76e6572.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/ae0330a1236c2143e8074.mp4")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/d7f16e8380808e76e6572.jpg")
 
 #2nd BOT SETTINGS 👇👇
 ANUSHKA_CACHE_TIME = int(environ.get('ANUSHKA_CACHE_TIME', 300))
 ANUSHKA_USE_CAPTION_FILTER = bool(environ.get('ANUSHKA_USE_CAPTION_FILTER', True))
 
-ANUSHKA_PICS = (environ.get('ANUSHKA_PICS', 'https://telegra.ph/file/61ef9818986cef9554017.jpg https://telegra.ph/file/4696ff67a5bae3ea92c14.jpg')).split()
-ANUSHKA_NOR_IMG = environ.get("ANUSHKA_NOR_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
-ANUSHKA_MELCOW_VID = environ.get("ANUSHKA_MELCOW_VID", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
-ANUSHKA_SPELL_IMG = environ.get("ANUSHKA_SPELL_IMG", "https://telegra.ph/file/61ef9818986cef9554017.jpg")
+ANUSHKA_PICS = (environ.get('ANUSHKA_PICS', 'https://graph.org/file/1aabc32de4442dbc5a2a0.jpg https://graph.org/file/9458bd38633097021468e.jpg https://graph.org/file/b352b109ff6ab64a0dec5.jpg https://graph.org/file/1e58ec7e88373d43fe698.jpg https://graph.org/file/e29fe074270cda1833462.jpg https://graph.org/file/ce952c92d4c42fd588213.jpg https://graph.org/file/5ee19f028c4585af12b6c.jpg https://graph.org/file/41dfb4d472208520d0314.jpg https://graph.org/file/ca6de43379db0999546ad.jpg https://graph.org/file/2212ca8121a17edb5a2e7.jpg')).split()
+ANUSHKA_NOR_IMG = environ.get("ANUSHKA_NOR_IMG", "https://graph.org/file/073f11f799747248a2d9c.jpg")
+ANUSHKA_MELCOW_VID = environ.get("ANUSHKA_MELCOW_VID", "https://graph.org/file/9712f22f0fb0edc2e2438.mp4")
+ANUSHKA_SPELL_IMG = environ.get("ANUSHKA_SPELL_IMG", "https://graph.org/file/073f11f799747248a2d9c.jpg")
 
 
 # Admins, Channels & User
