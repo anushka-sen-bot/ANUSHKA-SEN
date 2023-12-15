@@ -8,7 +8,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ANUSHKADB.ia_filterdb import Media, get_file_details, unpack_new_file_id, get_bad_files
 from database.ANUSHKADB.users_chats_db import dbanushka as db
-from info import *
+from ANUSHKA.info import *
 from ANUSHKA.utils import get_settings, get_size, is_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, send_all
 from database.ANUSHKADB.connections_mdb import active_connection
 from ANUSHKA.fsub import ForceSub
