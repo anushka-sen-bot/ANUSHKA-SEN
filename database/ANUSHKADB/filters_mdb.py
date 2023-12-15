@@ -1,5 +1,5 @@
 import pymongo
-from info import DATABASE_URI, DATABASE_NAME
+from ANUSHKA.info import DATABASE_URI, DATABASE_NAME
 from pyrogram import enums
 import logging
 logger = logging.getLogger(__name__)
