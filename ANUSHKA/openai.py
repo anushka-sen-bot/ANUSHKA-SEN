@@ -1,4 +1,4 @@
-from info import S_GROUP, OPENAI_API
+from ANUSHKA.info import S_GROUP, OPENAI_API
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import openai
