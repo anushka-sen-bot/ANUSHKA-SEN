@@ -3,7 +3,7 @@ from ANUSHKA.utils import temp
 from pyrogram.types import Message
 from database.ANUSHKADB.users_chats_db import dbanushka as db
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from info import SUPPORT_CHAT
+from ANUSHKA.info import SUPPORT_CHAT
 
 async def banned_users(_, client, message: Message):
     return (
