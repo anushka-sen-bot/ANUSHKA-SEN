@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 import datetime
 import time
 from database.ANUSHKADB.users_chats_db import dbanushka as db
-from info import ADMINS
+from ANUSHKA.info import ADMINS
 from ANUSHKA.utils import broadcast_messages
 import asyncio
         
