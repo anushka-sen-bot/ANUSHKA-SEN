@@ -3,7 +3,7 @@
 # (c) @AlbertEinsteinTG
 
 import motor.motor_asyncio
-from info import REQ_CHANNEL
+from ANUSHKA.info import REQ_CHANNEL
 
 class JoinReqs:
 
