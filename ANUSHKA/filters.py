@@ -10,7 +10,7 @@ from database.ANUSHKADB.filters_mdb import(
 
 from database.ANUSHKADB.connections_mdb import active_connection
 from ANUSHKA.utils import get_file_id, parser, split_quotes
-from info import ADMINS
+from ANUSHKA.info import ADMINS
 
 
 @Client.on_message(filters.command(['filter', 'add']) & filters.incoming)
