@@ -2,7 +2,7 @@ import os
 import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message, User, ChatJoinRequest
-from info import CHAT_ID, APPROVED 
+from ANUSHKA.info import CHAT_ID, APPROVED 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
