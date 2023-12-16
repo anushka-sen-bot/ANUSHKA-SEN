@@ -43,7 +43,7 @@ ANUSHKA_SPELL_IMG = environ.get("ANUSHKA_SPELL_IMG", "https://graph.org/file/073
 
 
 # Admins, Channels & User
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1927155351').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -55,7 +55,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 #FOR 2ND BOT ADMIN & ALL 👇👇
-ANUSHKA_ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ANUSHKA_ADMINS', '').split()]
+ANUSHKA_ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ANUSHKA_ADMINS', '1927155351').split()]
 ANUSHKA_CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('ANUSHKA_CHANNELS', '').split()]
 anushka_auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('ANUSHKA_AUTH_USERS', '').split()]
 ANUSHKA_AUTH_USERS = (anushka_auth_users + ADMINS) if auth_users else []
