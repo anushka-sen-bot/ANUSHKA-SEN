@@ -50,7 +50,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID')
-reqst_channel = environ.get('REQST_CHANNEL_ID')
+reqst_channel = environ.get('REQST_CHANNEL_ID', -1002029599178)
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
@@ -82,7 +82,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 ANUSHKA_COMMAND_HAND_LER = environ.get("ANUSHKA_COMMAND_HAND_LER", "/")
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Freya")
+DATABASE_NAME = environ.get('DATABASE_NAME', "FreyaAllan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # 2nd Bot DB
