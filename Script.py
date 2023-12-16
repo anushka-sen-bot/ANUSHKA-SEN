@@ -8,6 +8,8 @@ my name is {},
 ᴊᴜsᴛ  ᴀᴅᴅ  ᴍᴇ  ᴛᴏ  ʏᴏᴜʀ  ɢʀᴏᴜᴘ  ᴀɴᴅ  ᴇɴᴊᴏʏ  😍
 
 💞 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://telegram.dog/addlist/a6R50VZLc54yYTA8'>ANUSHKA SEN♥️</a></b>
+
+STICKER PACK = https://telegram.dog/addstickers/ANUSHKA_SEN_bot_sticker
 """
     HELP_TXT = """
 <b>{},
