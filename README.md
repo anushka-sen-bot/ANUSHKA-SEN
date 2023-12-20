@@ -37,7 +37,7 @@ ask renish https://telegram.dog/renish_rgi
 
 
 
-<details>
+
 <summary><h3>
   𝐷𝑒𝑝𝑙𝑜𝑦𝑚𝑒𝑛𝑡 𝑀𝑒𝑡ℎ𝑜𝑑
 </h3></summary>
