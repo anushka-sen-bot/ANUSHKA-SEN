@@ -34,3 +34,33 @@ https://telegram.dog/addlist/a6R50VZLc54yYTA8
 
 extra 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒𝑠 if you need to use
 ask renish https://telegram.dog/renish_rgi
+
+
+
+<details>
+<summary><h3>
+  𝐷𝑒𝑝𝑙𝑜𝑦𝑚𝑒𝑛𝑡 𝑀𝑒𝑡ℎ𝑜𝑑
+</h3></summary>
+  
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
+
+<p align="center"><a href="https://github.com/anushka-sen-bot/ANUSHKA-SEN/tree/main">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy On Heroku">
+</a></p>
+<h3 align="center">
+
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs 」─
+</h3>
+<p>
+<pre>
+git clone https://github.com/anushka-sen-bot/ANUSHKA-SEN/tree/main
+# Install Packages
+pip3 install -U -r requirements.txt
+Edit info.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
