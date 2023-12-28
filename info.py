@@ -16,12 +16,12 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID'))
-API_HASH = environ.get('API_HASH')
-BOT_TOKEN = environ.get('BOT_TOKEN')
+API_ID = int(environ.get('API_ID', '1234'))
+API_HASH = environ.get('API_HASH', '1234567')
+BOT_TOKEN = environ.get('BOT_TOKEN', '1234:abcd')
 
 #FOR 2ND BOT ENV👇👇
-ANUSHKA_BOT_TOKEN = environ.get('ANUSHKA_BOT_TOKEN') # for your 2nd bot
+ANUSHKA_BOT_TOKEN = environ.get('ANUSHKA_BOT_TOKEN', '1234:abcd') # for your 2nd bot
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
