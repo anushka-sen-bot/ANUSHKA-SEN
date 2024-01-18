@@ -1,17 +1,28 @@
 # ANUSHKA-SEN
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue.svg)](https://github.com/sponsors/Renishrplay)
+
 https://telegram.dog/addlist/a6R50VZLc54yYTA8
 
 <p align="center">
   <img src="https://graph.org/file/41dfb4d472208520d0314.jpg" alt="ANUSHKA SEN Logo">
 </p>
+
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue.svg)](https://github.com/sponsors/Renishrplay)
+
 <h1 align="center">
   https://telegram.dog/ANUSHKA_SEN_bot
 </h1>
 
+# 
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue.svg)](https://github.com/sponsors/Renishrplay)
 # SPECIAL FUNCTION
 ## 2 in 1 bot
 ## yes 2 bot in 1 sarvar 
 
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue.svg)](https://github.com/sponsors/Renishrplay)
 
 ## 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒𝑠
 
@@ -36,15 +47,19 @@ extra 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒𝑠 if you need to use
 ask renish https://telegram.dog/renish_rgi
 
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue.svg)](https://github.com/sponsors/Renishrplay)
 
 
 <summary><h3>
   𝐷𝑒𝑝𝑙𝑜𝑦𝑚𝑒𝑛𝑡 𝑀𝑒𝑡ℎ𝑜𝑑
 </h3></summary>
-  
+
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
+
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-blue.svg)](https://github.com/sponsors/Renishrplay)
 
 <p align="center"><a href="https://github.com/anushka-sen-bot/ANUSHKA-SEN/tree/main">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy On Heroku">
