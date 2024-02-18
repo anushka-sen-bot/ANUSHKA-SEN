@@ -135,7 +135,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
+                          InlineKeyboardButton("🌐 WATCH & DOWNLOAD ✅", callback_data=f"stream")
                          ]
                         ]
                     )
@@ -151,7 +151,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
+                          InlineKeyboardButton("🌐 WATCH & DOWNLOAD ✅", callback_data=f"stream")
                          ]
                         ]
                     )
@@ -190,7 +190,7 @@ async def start(client, message):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
+                              InlineKeyboardButton("🌐 WATCH & DOWNLOAD ✅", callback_data=f"stream")
                              ]
                             ]
                         )
@@ -242,7 +242,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
+                      InlineKeyboardButton("🌐 WATCH & DOWNLOAD ✅", callback_data=f"stream")
                      ]
                     ]
                 )
@@ -356,7 +356,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
+                      InlineKeyboardButton("🌐 WATCH & DOWNLOAD ✅", callback_data=f"stream")
                      ]
                     ]
                 )
@@ -408,7 +408,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton("❤️‍🔥 ᴄʜᴀɴɴᴇʟ​ ❤️‍🔥", url="https://telegram.dog/ANUSHKA_SEN_CHANNEL")
+              InlineKeyboardButton("🌐 WATCH & DOWNLOAD ✅", callback_data=f"stream")
              ]
             ]
         )
