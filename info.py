@@ -158,6 +158,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
 
 LANGUAGES = ["hindi", "hin", "tamil", "tam", "telugu", "tel", "english", "eng", "kannada", "kan", "malayalam", "mal"]
 TUTORIAL = environ.get('TUTORIAL', 'https://youtu.be/rddlpYLm0G0')
@@ -204,6 +205,8 @@ ANUSHKA_PUBLIC_FILE_STORE = is_enabled((environ.get('ANUSHKA_PUBLIC_FILE_STORE',
 ANUSHKA_LANGUAGES = ["hindi", "hin", "tamil", "tam", "telugu", "tel", "english", "eng", "kannada", "kan", "malayalam", "mal"]
 ANUSHKA_TUTORIAL = environ.get('ANUSHKA_TUTORIAL', 'https://youtu.be/rddlpYLm0G0')
 ANUSHKA_IS_TUTORIAL = bool(environ.get('ANUSHKA_IS_TUTORIAL', True))
+ANUSHKA_BIN_CHANNEL = int(environ.get('ANUSHKA_BIN_CHANNEL', ''))
+
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
