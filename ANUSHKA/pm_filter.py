@@ -37,6 +37,15 @@ BUTTONS = {}
 SPELL_CHECK = {}
 ENABLE_SHORTLINK = ""
 
+from info import BIN_CHANNEL
+
+@Client.on_callback_query(filters.regex(r"^stream"))
+async def all_File_stream_bot(bot, query):
+    msg = await query.message.copy(chat_id=BIN_CHANNEL)
+    await asyncio.sleep(2) 
+    await msg.forward(chat_id=query.from_user.id)
+
+
 @Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
